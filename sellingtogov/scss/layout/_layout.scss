@@ -1,0 +1,748 @@
+
+body {
+  font-family: $fontDefault;
+  background: $grey-100;
+  color: $black-300;
+}
+
+#page {
+  max-width: $max-width;
+  box-shadow: none;
+}
+
+#main {
+  margin: 0;
+  padding: 40px 40px 30px 40px;
+
+  .region-sidebar-first {
+    padding: 0 40px 0 0;
+    margin: 0;
+  }
+  .region-sidebar-second {
+    padding: 0;
+  }
+}
+
+#content {
+  display: inline-block;
+  float: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  .views-row {
+    border-top: none;
+  }
+}
+
+.pane-node-title {
+  h1 {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: bold;
+    color: $light-blue;
+    font-family: $fontBlack;
+  }
+}
+
+.panel-3col-33 {
+  .panel-col-first {
+    width: 24%;
+    margin-top: -17px;
+  }
+  .panel-col {
+    width: 55.333%;
+  }
+  .panel-col-last {
+    width: 17.666%;
+    margin-top: -17px;
+    margin-left: 33px;
+  }
+}
+
+.breadcrumb {
+  border-bottom: none;
+  padding: 0;
+}
+
+/******* sidebar Right ******/
+.pane-menu-menu-stg-sidebar-menu {
+  .menu {
+    li {
+      display: block;
+      a {
+        @include btn;
+        display: block;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        margin-bottom: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/******* sidebar generals*******/
+.two-sidebars, .one-sidebar {
+  .page__title {
+    @include title;
+  }
+
+  .view-id-case_studies_pages, .view-stg-guide-page {
+    .page-listing-body {
+      width: 71%;
+      font-size: 16px;
+      display: inline-block;
+      font-family: $fontDefault;
+      color: $black-300;
+      h2 {
+        font-size: 16px;
+        color: $black-300;
+        font-family: $fontDefault;
+      }
+    }
+    .date-wrapper {
+      display: inline-block;
+      color: $light-blue;
+    }
+    .tags-wrapper {
+      float: right;
+    }
+    .case-tags {
+      font-family: $fontDefault;
+      a {
+        color: $light-blue;
+        text-decoration: none;
+      }
+    }
+
+    .read-more-listing {
+      padding-top: 10px;
+      a {
+        @include btn;
+        font-size: 1.4rem;
+        font-size: 14px;
+        padding: 0.4em 1em;
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          background: $light-green;
+        }
+      }
+    }
+    .view-content {
+      .views-row {
+        border-bottom: 1px solid $grey-100 !important;
+      }
+    }
+
+    .file-icon {
+      display: none;
+    }
+    .file-size {
+      display: none;
+    }
+  }
+
+  .view-stg-blog-page-listing {
+
+    .view-content {
+      .views-row {
+        border-bottom: 1px solid $grey-100 !important;
+      }
+    }
+
+    .read-more-listing {
+      padding-top: 10px;
+      a {
+        @include btn;
+        font-size: 14px;
+        padding: 0.4em 1em;
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          background: $light-green;
+        }
+      }
+    }
+
+    .date-wrapper {
+      color: $light-blue;
+    }
+
+    .page-listing-body {
+      width: 100%;
+      padding-bottom: 20px;
+      float: left;
+      display: inline-block;
+    }
+  }
+
+  .featured-image {
+    float: left;
+    margin-right: 20px;
+    max-width: 25%;
+    width: 25%;
+    padding-top: 12px;
+    padding-bottom: 28px;
+
+  }
+  .page-listing-title {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+    color: $light-blue;
+    font-family: $fontBlack;
+    a {
+      color: $light-blue;
+      text-decoration: none;
+    }
+  }
+
+}
+
+#block-views-stg-guide-page-block-1 {
+  .views-row-first {
+    background: $grey-300;
+    padding: 20px 20px 0;
+    border: 1px solid transparent;
+  }
+}
+
+/******* sidebar views *******/
+
+.region-sidebar-first {
+  h2.block-title {
+    display: none;
+  }
+}
+
+.pane-menu-block-1 {
+  h2 {
+    display: none;
+  }
+}
+
+.two-sidebars {
+
+  .view-header {
+    p {
+      font-size: 16px;
+      font-family: $fontDefault;
+    }
+  }
+  #main {
+    display: inline-block;
+    width: 100%;
+  }
+  #content {
+    display: inline-block;
+    float: left;
+    width: 55.333%;
+  }
+
+  .region-sidebar-first {
+    float: left;
+    width: 24%;
+    margin-left: 25px;
+    padding-top: 25px;
+  }
+
+  .region-sidebar-second {
+    width: 17.666%;
+    padding-top: 25px;
+    .menu {
+      li {
+        display: block;
+        a {
+          @include btn;
+          display: block;
+          padding-left: 0.25em;
+          padding-right: 0.25em;
+          margin-bottom: 20px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    .block {
+      .block__content {
+        background: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .two-sidebars .page-faqs {
+    .page__title {
+      text-transform: uppercase;
+    }
+  }
+  .view-faq-page {
+
+    .page-listing-title {
+      color: $black-300;
+      font-family: $fontBlack;
+    }
+    .read-more-listing {
+      padding-top: 10px;
+      a {
+        @include btn;
+        font-size: 14px;
+        padding: 0.4em 1em;
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          background: $light-green;
+        }
+      }
+    }
+
+    .view-content {
+      .views-row {
+        border-bottom: 1px solid $grey-100 !important;
+      }
+    }
+
+  }
+  .sidebar .block .block__title {
+    padding: 0;
+  }
+  #block-views-case-studies-pages-block-1 {
+    margin-bottom: 20px;
+    h2 {
+      font-family: $fontDefault;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    h2.block__title.block-title {
+      background-image: none;
+      color: $black-300;
+      background: none !important;
+    }
+    .page-listing-title {
+      font-size: 16px;
+      font-family: $fontDefault;
+      a {
+        color: $blue-100;
+        text-decoration: none;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    .page-listing-body {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .view-content .views-row {
+      border-bottom: none !important;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 50px;
+      background: url(../images/sidebar-bottom-bg.png) bottom right no-repeat;
+    }
+  }
+
+}
+
+.one-sidebar {
+  .field-name-body {
+    p {
+      font-family: $fontDefault;
+      font-size: 16px;
+    }
+  }
+  #main {
+    display: inline-block;
+    width: 100%;
+  }
+  #content {
+    display: inline-block;
+    float: left;
+    width: 75%;
+  }
+  .region-sidebar-second {
+    width: 25%;
+    padding-top: 25px;
+    .menu {
+      li {
+        display: block;
+        a {
+          @include btn;
+          display: block;
+          padding-left: 0.25em;
+          padding-right: 0.25em;
+          margin-bottom: 20px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    .block {
+      .block__content {
+        background: none;
+        padding: 0;
+      }
+    }
+  }
+  #block-views-case-studies-pages-block-1 {
+    margin-bottom: 20px;
+    h2.block__title.block-title {
+      background-image: none;
+      color: $black-300;
+      background: none !important;
+    }
+    .page-listing-title {
+      font-size: 16px;
+      a {
+        color: $blue-100;
+        text-decoration: none;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    .page-listing-body {
+      width: 100%;
+    }
+
+    .view-content .views-row {
+      border-bottom: none !important;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 50px;
+      background: url(../images/sidebar-bottom-bg.png) bottom right no-repeat;
+    }
+  }
+}
+
+.node-type-page {
+  .field-name-body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.pane-block .views-row, .search-results li, #content .views-row {
+  padding-bottom: 2.7em;
+}
+
+.section-have-your-say {
+  .page__title {
+    @include title;
+  }
+  .breadcrumb {
+    display: block !important;
+  }
+  #content {
+    max-width: 680px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.sidebar .block .block__title {
+  padding: 0;
+}
+
+.node-type-faqs {
+  .pane-node-body {
+    h2 {
+      font-family: $fontBlack;
+      font-size: 18px;
+    }
+  }
+}
+
+.section-contact {
+  .field-name-body {
+    h2 {
+      font-family: $fontBlack;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 23px;
+    }
+    p {
+      a {
+        color: $blue-100;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+.no-sidebars {
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .panel-3col-33 {
+    .breadcrumb {
+      display: block;
+    }
+  }
+  .field-name-body {
+    p {
+      font-family: $fontDefault;
+      font-size: 16px;
+    }
+  }
+}
+
+.pane-node-field-video-url {
+  padding-top: 10px;
+  video {
+    width: 100%;
+  }
+}
+
+.field-name-field-tags {
+  border: none;
+  .field-items {
+    a {
+      text-decoration: none;
+      color: $light-blue;
+    }
+  }
+}
+
+.page-node {
+  .pane-node-body {
+    p {
+      line-height: 20px;
+
+    }
+    .field-name-body {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .pane-menu-block-1 {
+    padding-right: 24px;
+  }
+
+}
+
+.field-label-inline {
+  .field-label {
+    width: 52px;
+  }
+}
+
+.pane-case-studies-pages {
+  .pane-title {
+    font-family: $fontDefault;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .view-display-id-block_1 {
+    margin-bottom: 20px;
+    h2.block__title.block-title {
+      background-image: none;
+      color: $black-300;
+      background: none !important;
+      font-family: $fontDefault;
+    }
+    .page-listing-title {
+      font-size: 16px;
+      font-family: $fontDefault;
+      a {
+        color: $blue-100;
+        text-decoration: none;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    .page-listing-body {
+      width: 100%;
+    }
+
+    .view-content .views-row {
+      border-bottom: none !important;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 50px;
+      background: url(../images/sidebar-bottom-bg.png) bottom right no-repeat;
+    }
+  }
+
+}
+
+.section-links {
+  #content {
+    h2 {
+      font-family: $fontBlack;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p:nth-child(1) {
+      padding-bottom: 55px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    .view-mode-full {
+      a {
+        font-family: $fontDefault;
+        color: $blue-100;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+
+    }
+
+  }
+}
+
+.breadcrumb {
+  font-family: $fontDefault;
+  font-size: 13px;
+  color: $grey-200;
+  a {
+    color: $grey-100;
+    &:hover {
+      color: $grey-200;
+      text-decoration: underline;
+    }
+  }
+}
+
+.page-blog {
+
+  font-family: $fontDefault;
+  #content {
+    h2.page-listing-title {
+      font-family: $fontBlack;
+    }
+    .date-listing-page {
+      font-size: 14px;
+    }
+  }
+
+  .page-listing-body {
+    p, em {
+      font-style: normal;
+      font-size: 16px;
+    }
+
+  }
+
+  #block-views-stg-blog-page-listing-block-1 {
+    margin-bottom: 20px;
+    h2.block__title.block-title {
+      @include block-title(18px, $black-300);
+    }
+    .page-listing-title {
+      font-size: 16px;
+      a {
+        color: $blue-100;
+        text-decoration: none;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    .page-listing-body {
+      width: 100%;
+    }
+
+    .view-content .views-row {
+      border-bottom: none !important;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+  }
+}
+
+.node-type-blog-article {
+  .pane-stg-blog-page-listing {
+    .view-stg-blog-page-listing {
+      padding-right: 20px;
+    }
+    .page-listing-title {
+      @include block-title(16px, $light-blue);
+      a {
+        color: $light-blue;
+        text-decoration: none;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+
+    }
+    .page-listing-body {
+      p, em {
+        font-family: $fontDefault;
+        font-style: normal;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/******* Sub Menu *******/
+.region-sidebar-first, .panel-col-first {
+  .block__content, .pane-menu-block-1 {
+    .menu {
+      background: $grey-100;
+      li {
+        font-weight: bold;
+        border-top: 1px solid $green-border;
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 10px 5px 10px 15px;
+          color: $white;
+          font-size: 16px;
+          font-weight: bold;
+          &:hover {
+            background: $dark-blue;
+          }
+        }
+        .active {
+          background: $dark-blue;
+        }
+      }
+    }
+  }
+
+}
+

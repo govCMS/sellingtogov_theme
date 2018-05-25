@@ -1,0 +1,128 @@
+/**
+*
+* Front
+*
+**/
+.front {
+  #content {
+    display: inline-block;
+    float: none;
+    width: 100%;
+  }
+  #main {
+    padding-top: 24px;
+  }
+  .rslides {
+    height: 311px;
+  }
+  .video-player {
+    float: left;
+  }
+  .pane-menu-menu-stg-sidebar-menu {
+    .menu li {
+      a {
+        background: $light-blue;
+      }
+    }
+  }
+  .pane-slideshow {
+    padding-bottom: 34px;
+  }
+  .rslides_tabs li.rslides_here {
+    background: $dark-blue;
+  }
+  .rslides_tabs {
+    position: relative;
+    width: 20%;
+    left: 42%;
+    margin: 10px 0 0 !important;
+    li {
+      background: $light-blue;
+      a {
+        width: 80px;
+        padding: 0 10px;
+        height: 9px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.front {
+  .panel-pane {
+    border: none;
+  }
+  #content .views-row {
+    border: none;
+  }
+
+  .sellingtogov-front-left {
+    h2 {
+      font-size: 18px;
+      font-family: $fontBlack;
+      font-weight: bold;
+    }
+    .panel-pane {
+      font-size: 16px;
+      line-height: 1.25;
+      color: $black-300;
+    }
+  }
+}
+
+.view-slideshow {
+  .slide__title {
+    a {
+      color: $light-blue;
+      text-decoration: none;
+      font-size: 26px;
+      font-family: $fontBlack;
+    }
+
+  }
+  .group-right {
+    position: absolute;
+    left: 9%;
+    top: 16%;
+    width: 25%;
+    font-family: $fontDefault;
+    font-size: 16px;
+    .field-type-text-with-summary {
+      margin-bottom: 15px;
+      font-family: 16px;
+    }
+    .field-name-field-read-more {
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0.66em 2em;
+      background: $dark-blue;
+      &:hover {
+        background: $light-green;
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.field-name-field-bean-body {
+  p {
+    a {
+      text-decoration: none;
+      color: $blue-100;
+    }
+  }
+}
+
+.pane-bean-homepage-video {
+  iframe {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+}

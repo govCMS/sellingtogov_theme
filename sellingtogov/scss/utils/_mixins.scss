@@ -1,0 +1,39 @@
+@mixin btn {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.66em 2em;
+  background: $dark-blue;
+  border: none;
+  font-size: 16px;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin title {
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: bold;
+  color: $light-blue;
+  font-family: $fontBlack;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin block-title($size, $color) {
+   background-image: none;
+   color: $color;
+   font-size: $size;
+   font-weight:  bold;
+   font-family: $fontDefault;
+   background: none !important
+}

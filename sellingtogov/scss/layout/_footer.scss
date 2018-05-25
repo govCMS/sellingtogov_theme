@@ -1,0 +1,79 @@
+/**
+*
+* Footer
+*
+**/
+
+.footer-region {
+  background: $black-200;
+  line-height: 40px;
+}
+
+#footer {
+  clear: right;
+}
+
+.wrapper-content {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+#block-menu-block-govcms-menu-block-footer {
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  .menu-block-wrapper > ul {
+    float: right;
+    > li {
+      width: auto;
+    }
+  }
+}
+
+.footer-logo {
+  background: url('../images/au-gov-logo-white.png') no-repeat;
+  width: 144px;
+  height: 38px;
+  float: left;
+  margin-left: 40px;
+}
+
+.copyright {
+  float: left;
+  font-family: $fontDefault;
+  color: $grey-100;
+  font-size: 12px;
+  padding-left: 40px;
+}
+
+.region-footer {
+
+  #block-menu-menu-footer-sub-menu {
+    padding-top: 0;
+    padding-right: 58px;
+    .block__content {
+      float: right;
+    }
+  }
+  .block-menu {
+    .menu {
+      li {
+        font-family: $fontDefault;
+        font-size: 12px;
+        padding-left: 15px;
+        a {
+          &:hover {
+            color: $grey;
+            text-decoration: underline;
+          }
+          padding: 0 .8em 0 .8em;
+          color: $grey-100;
+          &:before {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
