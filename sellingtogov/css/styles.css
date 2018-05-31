@@ -6,7 +6,14 @@
 	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
 
 ####################################################################### */
+/* Removing the text from sitemap */
+#site-map .site-map-message {
+    display: none;
+}
 
+#content h2 {
+    font-size: 1.2em;
+}
 
 .sidebar .block .block__title {
     background:white;
